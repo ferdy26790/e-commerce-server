@@ -11,7 +11,7 @@ var signup = require('./routes/signup');
 var signin = require('./routes/signin');
 require('dotenv').config()
 var transactions = require('./routes/transactions')
-mongoose.connect('mongodb://localhost/ecom');
+mongoose.connect('mongodb://admin:admin@ds251598.mlab.com:51598/e-commerce');
 var app = express();
 app.use(cors())
 // uncomment after placing your favicon in /public
